@@ -48,7 +48,7 @@ kill_processes() {
 
 # Launch bars
 apply_bar() {
-	. "$HOME"/.config/bspwm/bars/"$CURRENT_BAR"/Bar.bash
+	. "$HOME"/.config/bspwm/bars/"$CURRENT_BAR"/Bar.bash "current"
 }
 
 # Set bspwm configuration

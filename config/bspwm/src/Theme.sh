@@ -252,7 +252,7 @@ apply_wallpaper () {
 
 # Launch bars
 apply_bar() {
-	. "$HOME"/.config/bspwm/bars/"$CURRENT_BAR"/Bar.bash
+	. "$HOME"/.config/bspwm/bars/"$DEFAULT_BAR"/Bar.bash
 }
 
 ### Apply Configurations
