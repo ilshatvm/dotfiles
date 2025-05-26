@@ -56,6 +56,7 @@ selected=$(
 
 # If a valid option was selected, write the value to the configuration file and change theme.
 if [ -n "$selected" ] && [ "$selected" != "$current_rice" ]; then
+    # sed -i 's~CURRENT_BAR=.*~CURRENT_BAR="'"$selected"'"~' "$HOME"/.config/bspwm/rices/"$selected"/theme-config.bash
     echo "$selected" > "$bspwm_dir"/.rice
     "${bspwm_dir}"/src/Theme.sh
 fi
